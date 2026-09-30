@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: latin-barber-cali
+    env: python
+    plan: free
+    buildCommand: "true"
+    startCommand: "python3 server/app.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
